@@ -1,17 +1,14 @@
 import React from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
 import Tasks from '../../components/ToDos/index'
+import BackHomeBtn from '../../components/HomeBtn';
 
-const TasksPage = () => {
+const ToDosPage = () => {
    return (
-      <BrowserRouter>
-         <button>
-            <Link to exact path="/">Voltar</Link>
-         </button>
-
+      <div>
+         <BackHomeBtn />
          <Tasks />
-      </BrowserRouter>
+      </div>
    );
 }
 
-export default TasksPage;
+export default ToDosPage;

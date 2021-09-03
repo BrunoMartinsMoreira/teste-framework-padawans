@@ -1,28 +1,22 @@
 import React from 'react';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const HomePage = () => {
    return (
-      <BrowserRouter>
+      <main>
          <div>
-            <Link to="/albuns">
-               Albuns
-            </Link>
+            <Link to="/albuns">Albuns</Link>
          </div>
 
          <div>
-            <Link to="/tasks">
-               Tarefas
-            </Link>
+            <Link to="/tasks">Tarefas</Link>
          </div>
 
          <div>
-            <Link to="/posts">
-               Postagens
-            </Link>
+            <Link to="/posts">Posts</Link>
          </div>
-      </BrowserRouter>
+      </main>
    );
 }
 

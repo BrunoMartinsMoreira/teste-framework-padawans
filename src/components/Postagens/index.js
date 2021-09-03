@@ -1,7 +1,6 @@
 import React from 'react';
 
-
-const Posts = () => {
+const Postagens = () => {
    return (
       <section>
          <p>pagina de posts</p>
@@ -9,4 +8,4 @@ const Posts = () => {
    );
 }
 
-export default Posts;
+export default Postagens;
