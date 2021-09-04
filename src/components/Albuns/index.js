@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import BackHomeBtn from '../../components/HomeBtn';
+import Header from '../Header';
 
 import "./album.css";
 
@@ -10,7 +10,6 @@ const Albuns = () => {
       axios.get("https://jsonplaceholder.typicode.com/albums?_limit=20")
          .then((response) => {
             setAlbuns(response.data)
-            console.log(albuns)
          })
          .catch((err) => {
             console.log(err)
@@ -21,12 +20,7 @@ const Albuns = () => {
 
    return (
       <section className="section">
-         <header>
-            <div className="back">
-               <BackHomeBtn />
-            </div>
-
-         </header>
+         <Header />
          <div className="main">
             {albuns.map((album) => {
                return (

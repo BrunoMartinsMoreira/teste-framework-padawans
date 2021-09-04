@@ -1,23 +1,14 @@
-header {
-  background-color: #924fb1;
-  width: 100%;
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-}
-.back {
-  margin-left: 2rem;
-}
 .main {
-  margin-top: 70px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 .section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .container {
   text-align: center;
