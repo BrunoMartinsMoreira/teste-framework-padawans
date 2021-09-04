@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Header from '../Header';
 
 import "./album.css";
 
@@ -20,7 +19,6 @@ const Albuns = () => {
 
    return (
       <section className="section">
-         <Header />
          <div className="main">
             {albuns.map((album) => {
                return (

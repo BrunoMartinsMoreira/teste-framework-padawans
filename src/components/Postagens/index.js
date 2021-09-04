@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Header from '../Header'
 
 const Postagens = () => {
 
@@ -19,7 +18,6 @@ const Postagens = () => {
 
    return (
       <section>
-         <Header />
          <div>
             {posts.map((post) => {
                return (
