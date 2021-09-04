@@ -24,13 +24,13 @@ const Albuns = () => {
                return (
                   <div className="item">
                      <div className="card">
-                        <p className="albuns">{album.title}</p>
+                        <p className="itemDescription">{album.title}</p>
                      </div>
                   </div>
                )
             })}
          </div>
-      </section>
+      </section >
    );
 }
 
