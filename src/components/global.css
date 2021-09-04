@@ -14,7 +14,7 @@
 
 .item {
   width: 34vw;
-  min-height: 30vh;
+  height: 32vh;
   margin: 10px 10px;
   text-align: center;
   background-color: rgba(50, 50, 50, 0.9);
@@ -29,7 +29,7 @@
 .itensTitle {
   text-transform: uppercase;
   margin-bottom: 12px;
-  font-size: 18px;
+  font-size: 1rem;
   color: #fdf7fe;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 2px;
@@ -61,4 +61,21 @@
   text-transform: unset;
   font-size: 22px;
   color: #000;
+}
+@media (max-width: 800px) {
+  .itensContainer {
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxContainer {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .item {
+    width: 80vw;
+  }
+  .itemDescription {
+    font-size: 1.5rem;
+  }
 }

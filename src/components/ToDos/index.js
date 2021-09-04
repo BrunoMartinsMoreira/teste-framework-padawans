@@ -6,7 +6,7 @@ const Tasks = () => {
 
    const [tasks, setTasks] = useState([]);
    useEffect(() => {
-      axios.get("https://jsonplaceholder.typicode.com/todos")
+      axios.get("https://jsonplaceholder.typicode.com/todos?_limit=20")
          .then((response) => {
             setTasks(response.data)
          })

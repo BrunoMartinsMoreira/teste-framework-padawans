@@ -6,12 +6,8 @@ import './style.css';
 const Header = () => {
    return (
       <header className="header">
-         <div className="back">
-            <BackHomeBtn />
-         </div>
-         <div className="nav">
-            <Links />
-         </div>
+         <BackHomeBtn />
+         <Links />
       </header>
    );
 }
