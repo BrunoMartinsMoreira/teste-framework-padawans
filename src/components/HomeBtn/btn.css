@@ -1,17 +1,18 @@
 .btn {
-  color: #f7f7f7;
+  color: #fbf7fe;
   text-transform: uppercase;
   font-size: 1.2rem;
   padding: 20px;
 }
 .backBtn {
-  border: #f7f7f7 2px solid;
-  padding: 10px 0;
+  border: #fbf7fe 3px solid;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
   text-align: center;
+  padding: 10px 0;
 }
+
 .backBtn:hover {
-  background: #2b0141;
+  background: #191315;
 }

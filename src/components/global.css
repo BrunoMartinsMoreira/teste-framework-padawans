@@ -1,0 +1,64 @@
+.itensContainer {
+  width: 80vw;
+  display: flex;
+  margin: 20px auto;
+}
+.boxContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 10px #000;
+}
+
+.item {
+  width: 34vw;
+  min-height: 30vh;
+  margin: 10px 10px;
+  text-align: center;
+  background-color: rgba(50, 50, 50, 0.9);
+  padding: 1rem 0.5rem;
+  border-radius: 5px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.item:hover {
+  box-shadow: 2px 1px 5px #66af47;
+}
+.itensTitle {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #fdf7fe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+.itenBody {
+  text-transform: unset;
+  font-size: 22px;
+  color: #000;
+}
+.albuns {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #fdf7fe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.postsTitle {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #fdf7fe;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 2px;
+}
+
+.postsBody {
+  text-transform: unset;
+  font-size: 22px;
+  color: #000;
+}

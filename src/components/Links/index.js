@@ -16,7 +16,7 @@ const Links = () => {
          <div className="link">
             <Link className="links" to="/posts">Postagens</Link>
          </div>
-      </nav>
+      </nav >
    );
 }
 

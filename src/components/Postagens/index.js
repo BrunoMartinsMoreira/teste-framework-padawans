@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../global.css';
 
 const Postagens = () => {
 
    const [posts, setPosts] = useState([]);
    useEffect(() => {
-      axios.get("https://jsonplaceholder.typicode.com/posts")
+      axios.get("https://jsonplaceholder.typicode.com/posts?_limit=20")
          .then((response) => {
             setPosts(response.data)
             console.log(posts)
@@ -17,18 +18,17 @@ const Postagens = () => {
    }, []);
 
    return (
-      <section>
-         <div>
+      <section className="itensContainer">
+         <div className="boxContainer">
             {posts.map((post) => {
                return (
-                  <div>
-                     <h2>{post.title}</h2>
-                     <p>{post.body}</p>
+                  <div className="item">
+                     <h2 className="postsTitle">{post.title}</h2>
+                     <p className="postsBody">{post.body}</p>
                   </div>
                )
             })}
          </div>
-
       </section>
    );
 }

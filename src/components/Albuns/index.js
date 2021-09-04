@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import '../global.css';
 
-import "./album.css";
 
 const Albuns = () => {
    const [albuns, setAlbuns] = useState([]);
@@ -18,16 +18,15 @@ const Albuns = () => {
 
 
    return (
-      <section className="section">
-         <div className="main">
+      <section className="itensContainer">
+         <div className="boxContainer">
             {albuns.map((album) => {
                return (
-                  <div className="container">
+                  <div className="item">
                      <div className="card">
-                        <p>{album.title}</p>
+                        <p className="albuns">{album.title}</p>
                      </div>
                   </div>
-
                )
             })}
          </div>
