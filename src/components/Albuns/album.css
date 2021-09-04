@@ -1,0 +1,38 @@
+header {
+  background-color: #924fb1;
+  width: 100%;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+}
+.back {
+  margin-left: 2rem;
+}
+.main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 15px 0;
+}
+.container:nth-child(odd) {
+  background: rgb(37, 37, 37);
+}
+.container:nth-child(even) {
+  background: rgb(17, 17, 17);
+}
+p {
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: #9af776;
+}
