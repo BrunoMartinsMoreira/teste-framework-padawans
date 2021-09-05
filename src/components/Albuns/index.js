@@ -25,12 +25,12 @@ const Albuns = () => {
          <div className="boxContainer">
 
             {
-               albuns.map((album) => {
+               albuns.map((album, id) => {
 
                   return (
-                     <div className="item">
+                     <div key={id} className="item">
                         <div className="card">
-                           <p key={album.id} className="itemDescription">{album.title}</p>
+                           <p className="itemDescription">{album.title}</p>
                         </div>
                      </div>
                   )

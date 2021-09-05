@@ -19,9 +19,9 @@ const Tasks = () => {
    return (
       <section className="itensContainer">
          <div className="boxContainer">
-            {tasks.map((task) => {
+            {tasks.map((task, id) => {
                return (
-                  <div className="item" >
+                  <div key={id} className="item" >
                      <div className="card">
                         <p className="itemDescription">{task.title}</p>
                      </div>
