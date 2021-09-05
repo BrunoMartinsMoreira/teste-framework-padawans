@@ -1,0 +1,93 @@
+.cardYoda {
+  background: url("../../images/yoda.jpg") no-repeat center;
+  background-position: top;
+  background-size: cover;
+  width: 95vw;
+  height: 78vh;
+  text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 1px 5px 10px #000;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.yodaTalks {
+  color: #fbf3f7;
+  font-size: 3rem;
+}
+.yodaDiv {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 40px 20px;
+  position: absolute;
+  left: 620px;
+  top: 170px;
+  border-radius: 50px 50px 50px 0px;
+  max-width: 43rem;
+}
+@media (max-width: 800px) {
+  .yodaTalks {
+    font-size: 18px;
+  }
+  .yodaDiv {
+    padding: 10px 20px;
+    left: 90px;
+    top: 250px;
+    border-radius: 20px 30px 30px 0;
+  }
+}
+
+.anima1 {
+  animation: anima1 5s forwards;
+}
+.anima2 {
+  animation: anima2 10s forwards;
+}
+.anima3 {
+  animation: anima3 15s forwards;
+}
+@keyframes anima1 {
+  from {
+    margin-right: -20px;
+    opacity: 0;
+    color: rgba(255, 255, 255, 0.1);
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+    color: #fbf3f7;
+  }
+}
+@keyframes anima2 {
+  from {
+    color: rgba(255, 255, 255, 0.1);
+    margin-left: -20px;
+    opacity: 0;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+    color: #fbf3f7;
+  }
+}
+
+@keyframes anima3 {
+  from {
+    color: rgba(255, 255, 255, 0.1);
+    margin-left: 50px;
+    opacity: 0;
+    z-index: -200;
+  }
+  to {
+    margin-left: 0;
+    opacity: 1;
+    z-index: 1;
+    color: #fbf3f7;
+  }
+}
