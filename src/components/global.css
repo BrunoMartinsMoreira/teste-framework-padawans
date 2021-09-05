@@ -126,3 +126,30 @@
 .btnBusca:hover {
   background: #7fc063;
 }
+.pagesBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  background: #2f2f2f;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.pageBtn {
+  font-size: 1rem;
+  padding: 3px 7px;
+  border: none;
+  margin-left: 8px;
+  background: #7fc063;
+  border-radius: 8px;
+  transition: 0.3s;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.opt {
+  z-index: 200;
+  cursor: pointer;
+}
