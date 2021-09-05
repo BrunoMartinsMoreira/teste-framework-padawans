@@ -1,6 +1,7 @@
 .itensContainer {
   width: 80vw;
   display: flex;
+  flex-direction: column;
   margin: 20px auto;
 }
 .boxContainer {
@@ -83,4 +84,29 @@
   .itemDescription {
     font-size: 1.5rem;
   }
+  .buscaContainer {
+    margin-top: 50px;
+  }
+}
+.buscaContainer {
+  width: 100%;
+}
+.busca {
+  font-size: 1.2rem;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+}
+.btnBusca {
+  font-size: 1.2rem;
+  padding: 5px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: #66af47;
+  color: #fdf7fe;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btnBusca:hover {
+  background: #7fc063;
 }
