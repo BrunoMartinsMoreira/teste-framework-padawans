@@ -8,7 +8,7 @@
   font-size: 1.2rem;
   padding: 20px;
 }
-.links:focus {
+.links.active {
   padding: 3px;
   box-shadow: 2px 2px 8px #191119;
   border-radius: 3px;
